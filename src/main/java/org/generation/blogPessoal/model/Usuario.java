@@ -30,6 +30,15 @@ public class Usuario {
 	@Size(min = 2, max = 100)
 	private String senha;
 	
+	public Usuario() {
+
+	}
+
+	public Usuario(@NotNull String usuario, @NotNull String senha) {
+		this.usuario = usuario;
+		this.senha = senha;
+	}
+
 	
 	//Getters e Setters
 	
